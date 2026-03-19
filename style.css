@@ -1,40 +1,52 @@
 body {
-margin: 0;
-font-family: 'Playfair Display', serif;
-background: #f4efe8;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #f5f1eb;
+  color: #1c1c1c;
 }
 
 header {
-text-align: center;
-padding: 40px;
+  text-align: center;
+  padding: 40px;
+}
+
+header h1 {
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background: #e8dfd3;
 }
 
 .grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
-padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 40px;
+  gap: 30px;
 }
 
 .card {
-background: white;
-border-radius: 10px;
-overflow: hidden;
-box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card img {
-width: 100%;
-height: 250px;
-object-fit: cover;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .card-content {
-padding: 15px;
-text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .price {
-color: #b38b59;
-font-weight: bold;
+  color: #b38b59;
+  font-weight: bold;
 }
