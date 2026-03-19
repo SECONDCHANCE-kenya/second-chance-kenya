@@ -1,0 +1,40 @@
+body {
+margin: 0;
+font-family: 'Playfair Display', serif;
+background: #f4efe8;
+}
+
+header {
+text-align: center;
+padding: 40px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 40px;
+}
+
+.card {
+background: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 15px;
+text-align: center;
+}
+
+.price {
+color: #b38b59;
+font-weight: bold;
+}
