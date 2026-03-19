@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #f5f1eb;
+  color: #1c1c1c;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f1eb;
+}
+
+header h1 {
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #777;
+  margin-top: 10px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #e8dfd3, #f5f1eb);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* INFO */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #a67c52;
+  font-size: 18px;
+}
+
+/* BUTTON */
+.buy-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #a67c52;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
