@@ -9,8 +9,7 @@
 <h1 style="text-align:center;">Checkout</h1>
 
 <div id="checkout-items"></div>
-
-<<script>
+<script>
 const phoneNumber = "2547XXXXXXXX"; // your number
 
 const items = JSON.parse(localStorage.getItem('cart')) || [];
@@ -18,6 +17,27 @@ const container = document.getElementById('checkout-items');
 
 let total = 0;
 let message = "Hello, I want to order:%0A";
+
+items.forEach(item => {
+  total += item.price;
+  message += `- ${item.name} (KSh ${item.price})%0A`;
+
+  const div = document.createElement('div');
+  div.innerHTML = `<p>${item.name} - KSh ${item.price}</p>`;
+  container.appendChild(div);
+});
+
+message += `%0ATotal: KSh ${total}`;
+
+container.innerHTML += `
+  <h2>Total: KSh ${total}</h2>
+  <a href="https://wa.me/${phoneNumber}?text=${message}">
+    <button style="padding:15px; background:black; color:white; width:100%;">
+      Order via WhatsApp
+    </button>
+  </a>
+`;
+</script>
 
 items.forEach(item => {
   total += item.price;
