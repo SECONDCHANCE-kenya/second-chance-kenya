@@ -45,3 +45,21 @@ fetch('bags.json')
       container.appendChild(div);
     });
   });
+function openImage(src) {
+  const modal = document.createElement('div');
+  modal.style.position = "fixed";
+  modal.style.top = 0;
+  modal.style.left = 0;
+  modal.style.width = "100%";
+  modal.style.height = "100%";
+  modal.style.background = "rgba(0,0,0,0.9)";
+  modal.style.display = "flex";
+  modal.style.justifyContent = "center";
+  modal.style.alignItems = "center";
+
+  modal.innerHTML = `<img src="${src}" style="max-width:90%; max-height:90%;">`;
+
+  modal.onclick = () => modal.remove();
+
+  document.body.appendChild(modal);
+}
