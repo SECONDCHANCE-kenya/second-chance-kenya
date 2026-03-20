@@ -30,7 +30,7 @@ fetch('bags.json')
        <img src="${bag.image}" onclick="openImage('${bag.image}')">
         <div class="card-content">
           <h3>${bag.name}</h3>
-          <p class="price">KSh ${bag.price}</p>
+          <p class="price">KSh ${bag.price}</p>${bag.stock === 1 ? '<p style="color:red;">Only 1 left</p>' : ''}
 
           ${
             bag.sold
