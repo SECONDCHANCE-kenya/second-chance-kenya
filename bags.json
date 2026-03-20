@@ -4,5 +4,5 @@
     "name": "Sample Bag",
     "price": 5000,
     "image": "bag1.jpg"
-  }
+  }"stock": 1
 ]
