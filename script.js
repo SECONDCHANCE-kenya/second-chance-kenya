@@ -27,7 +27,7 @@ fetch('bags.json')
 
       div.innerHTML = `
         ${bag.sold ? '<div class="sold">SOLD</div>' : ''}
-        <img src="${bag.image}">
+       <img src="${bag.image}" onclick="openImage('${bag.image}')">
         <div class="card-content">
           <h3>${bag.name}</h3>
           <p class="price">KSh ${bag.price}</p>
