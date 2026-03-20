@@ -1,40 +1,36 @@
-body {body {
-  body {
+body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #f8f5f0, #f2e6d9);
   color: #1a1a1a;
+}body {
+  background-image: url('https://www.transparenttextures.com/patterns/zebra-3d.png');
 }
-  background: #f8f5f0;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f8f5f0;
-  color: #111;
+
 }
 
 /* NAVBAR */
 .navbar {
-  position: sticky;
-  top: 0;
-  background: rgba(248,245,240,0.9);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(to right, #1b4332, #6a994e);
+  color: white;
   padding: 20px;
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  letter-spacing: 3px;
+}
 }
 
 /* HERO */
 .hero {
   height: 80vh;
-  background: url('bag1.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('bag1.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-content {
+  color: #f1c27d;
 }
 
 .hero-content {
@@ -59,11 +55,17 @@ body {body {
 }
 
 /* CARD */
-.card .card img {
-  transition: transform 0.4s;
+.card {
+  border: 2px solid #e9c46a;
+  border-radius: 15px;
+  background: white;
+  transition: 0.3s;
 }
-.card:hover img {
-  transform: scale(1.05);
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #f4a261;
+}
 }
   
   position: relative;
@@ -103,18 +105,13 @@ body {body {
 
 /* BUTTON */
 .buy-btn {
-  margin-top: 10px;
-  padding: 12px;
-  width: 100%;
-  background: black;
+  background: linear-gradient(to right, #e76f51, #f4a261);
   color: white;
-  border: none;
   border-radius: 8px;
-  cursor: pointer;
 }
 
 .buy-btn:hover {
-  background: #333;
+  background: linear-gradient(to right, #d65a31, #e9c46a);
 }
 
 /* SOLD BADGE */
